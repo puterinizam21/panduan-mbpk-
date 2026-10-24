@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panduan Interaktif Sokongan Kolaboratif MBPK</title>
+<style>
+:root{--navy:#173b63;--blue:#2e74a8;--sky:#e8f4ff;--mint:#e8f6ee;--lav:#f1eaff;--gold:#fff2d7;--ink:#233447;--muted:#627387;--white:#fff}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f6f9fc;color:var(--ink);line-height:1.65}
+.hero{background:linear-gradient(135deg,#173b63,#347fb3);color:white;padding:42px 24px;text-align:center;border-radius:0 0 24px 24px}
+.hero .eyebrow{letter-spacing:2px;text-transform:uppercase;font-size:.78rem;opacity:.9}
+.hero h1{font-size:clamp(1.7rem,4vw,2.7rem);line-height:1.2;margin:12px auto;max-width:900px}
+.hero p{max-width:760px;margin:12px auto 0}
+.wrap{max-width:1050px;margin:auto;padding:22px 16px 50px}
+.nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:18px 0 26px}
+.nav button,.btn{border:0;border-radius:999px;background:var(--navy);color:white;padding:11px 16px;font-weight:700;cursor:pointer}
+.nav button{background:white;color:var(--navy);border:1px solid #d6e4f0}
+.nav button.active,.nav button:hover,.btn:hover{background:var(--blue);color:white}
+.page{display:none;animation:fade .2s ease}
+.page.active{display:block}
+@keyframes fade{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}
+h2{color:var(--navy);font-size:1.65rem;margin-top:8px}
+h3{color:var(--navy);margin-bottom:8px}
+.lead{font-size:1.06rem;color:#3f566c}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px;margin:18px 0}
+.card{background:white;border:1px solid #e0eaf2;border-radius:16px;padding:19px;box-shadow:0 5px 16px rgba(23,59,99,.05)}
+.card.sky{background:var(--sky)}.card.mint{background:var(--mint)}.card.gold{background:var(--gold)}.card.lav{background:var(--lav)}
+.tag{display:inline-block;background:#dbeeff;color:var(--navy);font-size:.8rem;padding:4px 10px;border-radius:999px;font-weight:bold}
+.callout{border-left:5px solid var(--blue);background:#eaf4fc;padding:16px 18px;border-radius:8px;margin:18px 0}
+.small{font-size:.9rem;color:var(--muted)}
+ul{padding-left:22px}
+li{margin:6px 0}
+table{border-collapse:collapse;width:100%;background:white;border-radius:12px;overflow:hidden;font-size:.94rem}
+th,td{padding:12px;border:1px solid #dce6ef;text-align:left;vertical-align:top}
+th{background:#e2effb;color:var(--navy)}
+.table-wrap{overflow-x:auto;margin:16px 0}
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding:24px 10px;border-top:1px solid #e0eaf2;margin-top:30px}
+details{background:white;border:1px solid #e0eaf2;border-radius:12px;padding:14px 17px;margin:10px 0}
+summary{cursor:pointer;color:var(--navy);font-weight:bold}
+label{display:block;margin:8px 0}
+input[type=radio],input[type=checkbox]{margin-right:8px}
+textarea{width:100%;min-height:90px;padding:10px;border:1px solid #b8cbdc;border-radius:8px;font:inherit}
+.progress{height:8px;background:#e0eaf2;border-radius:99px;overflow:hidden;margin:10px 0 18px}
+.progress span{display:block;height:100%;background:#3984c6;width:0;transition:width .2s}
+@media(max-width:600px){.hero{padding:32px 17px}.nav{justify-content:stretch}.nav button{flex:1 1 42%;font-size:.88rem}.card{padding:16px}th,td{padding:9px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="eyebrow">Panduan Multimedia Interaktif</div>
+  <h1>Panduan Interaktif Sokongan Kolaboratif MBPK</h1>
+  <p><strong>Persediaan Transisi Murid Autisme dari Alam Persekolahan ke Alam Dewasa</strong></p>
+  <p>Kerjasama sekolah, keluarga, kementerian, agensi dan NGO bagi membina kemahiran hidup serta kebolehan berdikari.</p>
+</header>
+<main class="wrap">
+  <nav class="nav" aria-label="Navigasi utama">
+    <button class="active" data-page="utama">Utama</button>
+    <button data-page="profil">Profil Kes</button>
+    <button data-page="analisis">Analisis Kes</button>
+    <button data-page="kementerian">Kementerian</button>
+    <button data-page="ngo">NGO</button>
+    <button data-page="pelan">Pelan Tindakan</button>
+    <button data-page="rujukan">Rumusan & Rujukan</button>
+  </nav>
+
+  <section class="page active" id="utama">
+    <span class="tag">01 · Pengenalan</span>
+    <h2>Selamat datang</h2>
+    <p class="lead">Panduan ini menerangkan bagaimana sokongan pelbagai pihak boleh dirancang berdasarkan keperluan seorang murid autisme di sekolah rendah.</p>
+    <div class="grid">
+      <article class="card sky"><h3>01. Kenali kes</h3><p>Fahami kekuatan dan keperluan Murid A berdasarkan pemerhatian dan temu bual guru.</p></article>
+      <article class="card mint"><h3>02. Fahami peranan</h3><p>Kenal pasti peranan KPM, KKM, KPWKM dan KSM serta sokongan NGO.</p></article>
+      <article class="card gold"><h3>03. Rancang tindakan</h3><p>Hubungkan keperluan murid dengan cadangan intervensi dan petunjuk perkembangan.</p></article>
+    </div>
+    <h3>Objektif panduan</h3>
+    <ol>
+      <li>Mengenal pasti kekuatan dan keperluan murid autisme berdasarkan kajian kes.</li>
+      <li>Menghuraikan peranan kementerian dan NGO dalam menyediakan sokongan yang bersesuaian.</li>
+      <li>Merancang tindakan kolaboratif berdasarkan keperluan murid, keluarga dan pihak sekolah.</li>
+      <li>Mengenal pasti persediaan transisi secara berperingkat untuk meningkatkan kemahiran kehidupan harian.</li>
+    </ol>
+    <div class="callout"><strong>Prinsip utama:</strong> Setiap murid mempunyai potensi. Sokongan perlu berasaskan kekuatan, keperluan individu, maruah dan keselamatan murid.</div>
+    <p class="small">Gunakan menu navigasi di atas untuk membuka setiap bahagian. Kandungan kajian kes menggunakan nama samaran bagi menjaga privasi.</p>
+  </section>
+
+  <section class="page" id="profil">
+    <span class="tag">02 · Kajian kes</span>
+    <h2>Profil Kajian Kes Murid A</h2>
+    <p>Maklumat ini diringkaskan daripada pemerhatian terhadap murid dan temu bual guru pendidikan khas. Nama murid dan sekolah tidak dipaparkan.</p>
+    <div class="grid">
+      <article class="card"><h3>Maklumat asas</h3><ul><li>Nama samaran: Murid A</li><li>Jantina: Lelaki</li><li>Umur: 13 tahun</li><li>Tahun: Tahun 5</li><li>Kategori: Autisme</li><li>Dokumen sokongan: RPI</li></ul></article>
+      <article class="card sky"><h3>Kekuatan</h3><ul><li>Boleh memakai kasut sendiri dan mengurus beberapa rutin harian.</li><li>Boleh pergi ke kantin dan membeli makanan, tetapi masih memerlukan bimbingan tentang bayaran.</li><li>Boleh menulis dengan tulisan yang boleh dibaca dan melakukan pengiraan asas.</li><li>Kemahiran motor halus dan kasar secara umumnya baik.</li></ul></article>
+      <article class="card gold"><h3>Keperluan sokongan</h3><ul><li>Tumpuan mudah terganggu dan tugasan tertentu perlu dipecahkan kepada langkah kecil.</li><li>Memerlukan arahan ringkas dan masa untuk memproses soalan.</li><li>Memerlukan bimbingan pengurusan emosi apabila terganggu atau kecewa.</li><li>Memerlukan latihan urutan membeli barang dan membuat bayaran.</li></ul></article>
+    </div>
+    <div class="callout"><strong>Etika kajian kes:</strong> Maklumat keluarga atau tingkah laku tidak boleh dianggap sebagai punca tanpa bukti. Huraian perlu membezakan dapatan pemerhatian, pandangan guru dan cadangan intervensi.</div>
+  </section>
+
+  <section class="page" id="analisis">
+    <span class="tag">03 · Analisis</span>
+    <h2>Analisis Kes dan Keperluan Intervensi</h2>
+    <p>Tekan setiap tajuk untuk melihat dapatan, analisis dan cadangan sokongan.</p>
+    <details open><summary>1. Pengurusan emosi dan tingkah laku</summary><p><strong>Dapatan:</strong> Guru melaporkan murid boleh menjerit atau memukul apabila terganggu atau tidak dapat melakukan perkara yang diingini.</p><p><strong>Analisis:</strong> Murid mungkin memerlukan cara yang lebih sesuai untuk menyampaikan ketidakselesaan. Pencetus perlu dikenal pasti melalui pemerhatian, bukan andaian.</p><p><strong>Cadangan:</strong> Ajarkan kad atau isyarat “nak rehat”, kenal pasti pencetus, sediakan rutin bertenang yang selamat dan selaraskan strategi sekolah-rumah.</p></details>
+    <details><summary>2. Komunikasi dan interaksi sosial</summary><p><strong>Dapatan:</strong> Murid cenderung bermain bersendirian dan memberi jawapan ringkas; arahan panjang mungkin perlu dipermudahkan.</p><p><strong>Cadangan:</strong> Gunakan ayat pendek, beri masa memproses soalan dan gunakan gambar, simbol atau AAC jika sesuai.</p></details>
+    <details><summary>3. Tumpuan dan pembelajaran</summary><p><strong>Dapatan:</strong> Murid mudah hilang tumpuan dan memerlukan contoh serta arahan langkah demi langkah untuk tugasan tertentu.</p><p><strong>Cadangan:</strong> Pecahkan tugasan, gunakan jadual visual, sediakan contoh dan sesuaikan jumlah kerja serta masa.</p></details>
+    <details><summary>4. Kemahiran berdikari dalam komuniti</summary><p><strong>Dapatan:</strong> Murid boleh ke kantin dan membeli makanan, tetapi guru menyatakan murid kadangkala mengambil makanan tanpa membuat bayaran.</p><p><strong>Cadangan:</strong> Latih urutan memilih makanan, menyerahkan wang, menunggu pengesahan bayaran dan mengambil barang melalui simulasi serta latihan berpandu.</p></details>
+    <div class="callout"><strong>Hubungan dengan transisi:</strong> Pada peringkat sekolah rendah, fokusnya ialah membina asas komunikasi, pengurusan diri, pengurusan emosi dan kemahiran komuniti. Perancangan kerjaya ialah matlamat jangka panjang, bukan penempatan kerja serta-merta.</div>
+  </section>
+
+  <section class="page" id="kementerian">
+    <span class="tag">04 · Peranan sektor awam</span>
+    <h2>Peranan Kementerian</h2>
+    <div class="grid">
+      <article class="card sky"><h3>KPM — Pendidikan</h3><ul><li>Menyemak dan mengemas kini RPI.</li><li>Menyesuaikan pembelajaran dan arahan.</li><li>Mengajar kemahiran kendiri serta kemahiran komuniti.</li><li>Menyelaras komunikasi sekolah-keluarga.</li></ul><p><strong>Contoh:</strong> Kad visual langkah membeli makanan dan membuat bayaran.</p></article>
+      <article class="card mint"><h3>KKM — Kesihatan</h3><ul><li>Menilai keperluan kesihatan dan perkembangan melalui perkhidmatan yang sesuai.</li><li>Memberi panduan kepada keluarga.</li><li>Mempertimbangkan rujukan kepada profesional berkaitan apabila diperlukan.</li></ul><p><strong>Contoh:</strong> Keluarga mendapatkan nasihat kesihatan jika memerlukan penilaian lanjut tentang komunikasi atau pengawalan sensori.</p></article>
+      <article class="card gold"><h3>KPWKM / JKM — Kebajikan</h3><ul><li>Memberi maklumat tentang pendaftaran OKU dan kemudahan berkaitan tertakluk pada syarat.</li><li>Membantu keluarga meneroka sokongan sosial dan komuniti.</li><li>Memberi maklumat mengenai PDK jika sesuai dan tersedia.</li></ul><p><strong>Contoh:</strong> Keluarga bertanya kepada JKM tentang perkhidmatan berhampiran dan kelayakan.</p></article>
+      <article class="card lav"><h3>KSM — Kemahiran dan pekerjaan</h3><ul><li>Meneroka laluan latihan kemahiran dan pekerjaan pada masa hadapan.</li><li>Mengambil kira minat, kekuatan dan kesediaan individu.</li><li>Menyokong matlamat pekerjaan inklusif melalui program berkaitan.</li></ul><p><strong>Contoh:</strong> Apabila murid lebih matang, keluarga dan sekolah meneroka laluan latihan yang sesuai.</p></article>
+    </div>
+    <p class="small">Cadangan di atas menerangkan potensi peranan agensi. Ia tidak bermaksud Murid A telah menerima perkhidmatan daripada kementerian berkenaan.</p>
+  </section>
+
+  <section class="page" id="ngo">
+    <span class="tag">05 · Sokongan komuniti</span>
+    <h2>Peranan NGO</h2>
+    <div class="grid">
+      <article class="card sky"><h3>NASOM</h3><p>National Autism Society of Malaysia ialah organisasi yang memberi tumpuan kepada autisme.</p><ul><li>Semak program semasa yang mungkin sesuai dengan umur dan keperluan murid.</li><li>Tanya tentang sumber untuk keluarga dan pembangunan kemahiran.</li><li>Teroka maklumat program kehidupan dewasa atau vokasional apabila bersesuaian.</li></ul><p><a href="https://www.nasom.org.my/" target="_blank" rel="noopener">Laman rasmi NASOM</a></p><p><a href="https://www.nasom.org.my/our-programmes/" target="_blank" rel="noopener">Maklumat program</a></p></article>
+      <article class="card lav"><h3>Hua Ming Autism Society (HMAS)</h3><p>HMAS boleh dihubungi untuk mendapatkan maklumat mengenai perkhidmatan sokongan autisme yang tersedia.</p><ul><li>Sahkan program, lokasi, syarat umur dan proses rujukan.</li><li>Tanya sama ada sokongan yang ditawarkan sesuai dengan keperluan komunikasi atau kemahiran hidup murid.</li><li>Pertimbangkan penglibatan keluarga jika program sesuai.</li></ul><p><a href="https://www.autism.org.my/services" target="_blank" rel="noopener">Semak maklumat perkhidmatan</a></p></article>
+    </div>
+    <div class="callout"><strong>Peringatan:</strong> Program, syarat umur dan ketersediaan perkhidmatan perlu disahkan terus dengan NGO. Jangan nyatakan Murid A telah mengikuti program jika tiada bukti.</div>
+  </section>
+
+  <section class="page" id="pelan">
+    <span class="tag">06 · Pelaksanaan</span>
+    <h2>Pelan Tindakan Sokongan Kolaboratif</h2>
+    <div class="table-wrap"><table><thead><tr><th>Keperluan</th><th>Tindakan dicadangkan</th><th>Pihak terlibat</th><th>Petunjuk perkembangan</th></tr></thead><tbody>
+      <tr><td>Pengurusan emosi</td><td>Kenal pasti pencetus, ajar penggunaan kad emosi atau “nak rehat”, sediakan rutin bertenang.</td><td>Guru, keluarga, profesional jika perlu</td><td>Murid semakin kerap menyampaikan ketidakselesaan dengan cara sesuai.</td></tr>
+      <tr><td>Komunikasi</td><td>Gunakan arahan ringkas, visual dan latihan meminta bantuan.</td><td>Guru, keluarga, profesional komunikasi jika perlu</td><td>Murid dapat menyampaikan kehendak atau meminta bantuan.</td></tr>
+      <tr><td>Tumpuan</td><td>Pecahkan tugasan kepada langkah kecil dan gunakan jadual visual.</td><td>Guru dan keluarga</td><td>Murid menyelesaikan tugasan dengan bantuan yang beransur kurang.</td></tr>
+      <tr><td>Kemahiran membeli barang</td><td>Latih memilih, membuat bayaran dan menunggu melalui simulasi serta latihan berpandu.</td><td>Guru dan keluarga</td><td>Murid mengikuti urutan transaksi dengan lebih konsisten.</td></tr>
+      <tr><td>Persediaan transisi</td><td>Kenal pasti minat, kekuatan dan matlamat kemahiran kendiri dalam RPI.</td><td>Guru, keluarga dan agensi yang relevan</td><td>Matlamat transisi disemak secara berkala.</td></tr>
+    </tbody></table></div>
+    <h3>Fasa pelaksanaan</h3>
+    <div class="grid">
+      <article class="card sky"><h3>Fasa 1: Kenal pasti</h3><p>Teliti RPI, rekod pemerhatian, bincang dengan keluarga dan tetapkan matlamat yang boleh diukur.</p></article>
+      <article class="card mint"><h3>Fasa 2: Laksana</h3><p>Jalankan strategi terpilih secara konsisten dan libatkan agensi atau NGO apabila sesuai.</p></article>
+      <article class="card gold"><h3>Fasa 3: Pantau</h3><p>Rekod perkembangan, bincang keberkesanan strategi dan ubah suai matlamat berdasarkan data.</p></article>
+    </div>
+    <h3>Senarai semak pemantauan</h3>
+    <p class="small">Tandakan petunjuk selepas ia benar-benar diperhatikan. Tanda ini hanya disimpan dalam paparan semasa dan bukan rekod rasmi murid.</p>
+    <div class="progress"><span id="bar"></span></div><p id="count" class="small">0 daripada 5 ditandakan</p>
+    <label><input class="goal" type="checkbox"> Murid menggunakan perkataan, kad atau isyarat untuk meminta rehat atau bantuan.</label>
+    <label><input class="goal" type="checkbox"> Murid menyampaikan kehendak menggunakan cara komunikasi yang sesuai.</label>
+    <label><input class="goal" type="checkbox"> Murid menyelesaikan tugasan yang disesuaikan dengan keupayaannya.</label>
+    <label><input class="goal" type="checkbox"> Murid mengikuti langkah membeli barang dan membuat bayaran.</label>
+    <label><input class="goal" type="checkbox"> Sekolah dan keluarga berkongsi maklumat perkembangan secara berkala.</label>
+    <button class="btn" id="copyChecklist" type="button">Salin senarai semak</button>
+    <p id="copyStatus" class="small" aria-live="polite"></p>
+  </section>
+
+  <section class="page" id="rujukan">
+    <span class="tag">07 · Penutup</span>
+    <h2>Rumusan</h2>
+    <p>Kes Murid A menunjukkan bahawa persediaan transisi perlu bermula dengan kemahiran asas yang relevan dengan kehidupan seharian. Murid mempunyai kekuatan dalam rutin kendiri, motor dan pengiraan asas, namun memerlukan sokongan dalam pengurusan emosi, komunikasi, tumpuan dan urusan jual beli.</p>
+    <p>Sokongan perlu dirancang berdasarkan keperluan individu, diselaraskan antara sekolah dan keluarga serta dilengkapkan oleh kementerian, agensi atau NGO apabila sesuai. Perkembangan murid perlu dinilai secara berterusan supaya strategi dapat disesuaikan. Matlamatnya ialah meningkatkan kebolehan berdikari, penyertaan dan kualiti kehidupan murid.</p>
+    <div class="callout"><strong>Bersama memperkasa MBPK:</strong> Sokongan yang sesuai, kerjasama yang kukuh dan peluang yang inklusif membantu membina masa depan yang lebih berdikari.</div>
+    <h2>Rujukan dan pautan rasmi</h2>
+    <ul>
+      <li>Kementerian Pendidikan Malaysia. (2019). <em>Surat Pekeliling Ikhtisas Kementerian Pendidikan Malaysia Bilangan 4 Tahun 2019: Pelaksanaan Program Transisi ke Kerjaya Murid Berkeperluan Khas di Sekolah Menengah Kementerian Pendidikan Malaysia.</em> <a href="https://www.moe.gov.my/spi-kpm-bil-4-tahun-2019-transisi-ke-kerjaya" target="_blank" rel="noopener">Laman KPM</a></li>
+      <li>Jabatan Kebajikan Masyarakat. (t.t.). <em>Portal rasmi Jabatan Kebajikan Masyarakat.</em> <a href="https://www.jkm.gov.my/" target="_blank" rel="noopener">jkm.gov.my</a></li>
+      <li>Kementerian Kesihatan Malaysia. (t.t.). <em>Portal rasmi Kementerian Kesihatan Malaysia.</em> <a href="https://www.moh.gov.my/" target="_blank" rel="noopener">moh.gov.my</a></li>
+      <li>Kementerian Sumber Manusia. (t.t.). <em>Portal rasmi Kementerian Sumber Manusia.</em> <a href="https://www.mohr.gov.my/" target="_blank" rel="noopener">mohr.gov.my</a></li>
+      <li>National Autism Society of Malaysia. (t.t.). <em>Our programmes.</em> <a href="https://www.nasom.org.my/our-programmes/" target="_blank" rel="noopener">nasom.org.my/our-programmes</a></li>
+      <li>Hua Ming Autism Society. (t.t.). <em>Services.</em> <a href="https://www.autism.org.my/services" target="_blank" rel="noopener">autism.org.my/services</a></li>
+    </ul>
+    <p class="small">Semak semula tajuk dan butiran penerbitan dokumen rasmi sebelum penghantaran. “t.t.” digunakan jika halaman sumber tidak menyatakan tarikh. Tambahkan rujukan kepada sumber lain yang benar-benar digunakan. Dapatan pemerhatian dan temu bual ialah data kajian kes; lindungi identiti murid, guru dan sekolah.</p>
+  </section>
+  <footer>Dokumen pendidikan · Gunakan nama samaran · Semak sumber rasmi sebelum penerbitan</footer>
+</main>
+<script>
+const buttons=[...document.querySelectorAll('.nav button')];
+const pages=[...document.querySelectorAll('.page')];
+buttons.forEach(btn=>btn.addEventListener('click',()=>{
+  buttons.forEach(b=>b.classList.toggle('active',b===btn));
+  pages.forEach(p=>p.classList.toggle('active',p.id===btn.dataset.page));
+  window.scrollTo({top:0,behavior:'smooth'});
+}));
+const goals=[...document.querySelectorAll('.goal')];
+function updateProgress(){const n=goals.filter(g=>g.checked).length;document.getElementById('count').textContent=`${n} daripada ${goals.length} ditandakan`;document.getElementById('bar').style.width=`${n/goals.length*100}%`;}
+goals.forEach(g=>g.addEventListener('change',updateProgress));
+document.getElementById('copyChecklist').addEventListener('click',async()=>{
+ const text='SENARAI SEMAK PEMANTAUAN MURID A\n'+goals.map(g=>(g.checked?'[x] ':'[ ] ')+g.parentElement.textContent.trim()).join('\n');
+ try{await navigator.clipboard.writeText(text);document.getElementById('copyStatus').textContent='Senarai semak disalin.';}
+ catch(e){const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();document.getElementById('copyStatus').textContent='Cuba tampal senarai semak pada dokumen anda.';}
+});
+</script>
+</body>
+</html>
